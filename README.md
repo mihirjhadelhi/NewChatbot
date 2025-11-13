@@ -119,27 +119,27 @@ npm install
 
 Create a `.env` file in the `server` directory:
 
-# Environment
+## Environment
 NODE_ENV=development
 
-# Server Configuration
+## Server Configuration
 PORT=5000
 HOST=0.0.0.0
 
-# Debug Flags
+## Debug Flags
 DEBUG=true
 VERBOSE=false
 
-# MongoDB Connection
+## MongoDB Connection
 MONGODB_URI=mongodb://localhost:27017/propertydb
 
-# For MongoDB Atlas (Cloud):
-# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/propertydb
+## For MongoDB Atlas (Cloud):
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/propertydb
 
-# OpenAI API Key (Optional, for NLP features)
+## OpenAI API Key (Optional, for NLP features)
 OPENAI_API_KEY=sk-your-openai-api-key-here
 
-# Feature Flags
+## Feature Flags
 ENABLE_NLP=true
 ENABLE_CORS=true
 > **Note:** Never commit the `.env` file to version control. Add it to `.gitignore`.
@@ -439,26 +439,32 @@ The frontend will be available at http://localhost:5173 (default Vite port)
 
 💻 Usage
 Using the Chatbot
+
 Natural Language Queries
 Type queries like: "Find me a 3 bedroom in Miami"
 The AI will extract filters and search automatically
+
 Filter Panel
 Click "Show Filters" to access the filter panel
 Set budget, location, bedrooms, bathrooms, size range
 Click "Search Properties" to apply filters
+
 Real-Time Search
 Use the "Real-Time Search" input field
 Properties filter automatically as you type (with 500ms debounce)
 Save Favorites
 Click "⭐ Save Property" on any property card
+
 View saved properties in the "Your Saved Properties" section
 Compare Properties
 Click "📊 Compare" on up to 4 properties
 View side-by-side comparison table
+
 Notes
 A temporary userId is generated per browser session
 Favorites and comparisons are linked to this userId
 Data persists in MongoDB until cleared
+
 🔌 API Documentation
 Base URL
 http://localhost:5000/api
