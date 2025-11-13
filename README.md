@@ -440,7 +440,7 @@ The frontend will be available at http://localhost:5173 (default Vite port)
 💻 Usage
 Using the Chatbot
 Natural Language Queries
-Type queries like: "Find me a 3 bedroom condo under $600k in Miami"
+Type queries like: "Find me a 3 bedroom in Miami"
 The AI will extract filters and search automatically
 Filter Panel
 Click "Show Filters" to access the filter panel
