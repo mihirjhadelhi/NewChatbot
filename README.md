@@ -157,27 +157,27 @@ npm installperties
   
   Step 2: Configure Environment Variables
 Create a .env file in the server directory:
-# Environment
+## Environment
 NODE_ENV=development
 
-# Server Configuration
+## Server Configuration
 PORT=5000
 HOST=0.0.0.0
 
-# Debug Flags
+## Debug Flags
 DEBUG=true
 VERBOSE=false
 
-# MongoDB Connection
+## MongoDB Connection
 MONGODB_URI=mongodb://localhost:27017/propertydb
 
-# For MongoDB Atlas (Cloud):
-# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/propertydb
+## For MongoDB Atlas (Cloud):
+## MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/propertydb
 
-# OpenAI API Key (Optional, for NLP features)
+## OpenAI API Key (Optional, for NLP features)
 OPENAI_API_KEY=sk-your-openai-api-key-here
 
-# Feature Flags
+## Feature Flags
 ENABLE_NLP=true
 ENABLE_CORS=true
 
@@ -243,26 +243,44 @@ npm startrences`**
 
 {
   id: Number,              // Unique identifier
+  
   bedrooms: Number,        // Number of bedrooms
+  
   bathrooms: Number,       // Number of bathrooms
+  
   size_sqft: Number,       // Square footage
+  
   amenities: [String],     // Array of amenities
+  
   image_url: String,       // Property image URL
+  
   location: String,        // Location (default: 'Unknown')
+  
   price: Number,           // Price (default: 0)
+  
   createdAt: Date,         // Auto-generated
+  
   updatedAt: Date          // Auto-generated
+
 }### UserPreference Schema
+
 vascript
 {
   userId: String,                    // Unique user identifier
+
   savedProperties: [ObjectId],        // Array of Property references
+  
   preferences: {
     minBudget: Number,
+  
     maxBudget: Number,
+    
     preferredLocations: [String],
+    
     minBedrooms: Number,
+    
     minBathrooms: Number,
+    
     requiredAmenities: [String]
   },
   searchHistory: [{
