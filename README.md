@@ -271,6 +271,7 @@ vascript
   savedProperties: [ObjectId],        // Array of Property references
   
   preferences: {
+
     minBudget: Number,
   
     maxBudget: Number,
@@ -283,15 +284,25 @@ vascript
     
     requiredAmenities: [String]
   },
+  
   searchHistory: [{
+   
     budget: Number,
+    
     location: String,
+    
     bedrooms: Number,
+    
     bathrooms: Number,
+    
     timestamp: Date
+  
   }],
+  
   createdAt: Date,
+  
   updatedAt: Date
+
 }## 🛠️ Available Scripts
 
 ### Backend Scripts (`server/package.json`)
