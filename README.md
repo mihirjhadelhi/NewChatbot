@@ -307,13 +307,21 @@ vascript
 
 ### Backend Scripts (`server/package.json`)
 sh
+
 npm start          # Start production server
+
 npm run dev        # Start development server with nodemon
+
 npm run import     # Import data from data/ folder to MongoDB### Frontend Scripts (`client/package.json`)
+
 sh
+
 npm run dev        # Start Vite development server
+
 npm run build      # Build for production
+
 npm run preview    # Preview production build
+
 npm run lint       # Run ESLint## 🐛 Troubleshooting
 
 ### Common Issues
