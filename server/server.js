@@ -33,4 +33,5 @@ app.use(errorHandler);
 
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log('OpenAI API Key loaded:', process.env.OPENAI_API_KEY ? 'Yes (hidden)' : 'NO - Missing!');
 });
